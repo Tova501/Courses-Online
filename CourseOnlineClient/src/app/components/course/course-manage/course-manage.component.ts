@@ -8,6 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-course-manage',
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
       MatInputModule,
       MatFormFieldModule,
       MatSelectModule,
-      ReactiveFormsModule],
+      ReactiveFormsModule,
+      HttpClientModule],
       standalone  : true,
   styleUrls: ['./course-manage.component.css']
 })

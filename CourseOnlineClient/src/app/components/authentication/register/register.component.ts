@@ -9,7 +9,11 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  imports: [MatSelectModule, MatInputModule, MatFormFieldModule, ReactiveFormsModule , HttpClientModule],
+  imports: [MatSelectModule,
+     MatInputModule,
+      MatFormFieldModule,
+       ReactiveFormsModule,
+       HttpClientModule],
   standalone: true,
   styleUrls: ['./register.component.css']
 })
