@@ -13,10 +13,10 @@ export class UserLogin {
 
 export class User {
     constructor(
-    public id: string | null,
+    public id: number,
     public role: string,
     public name: string,
     public email: string,
     public password: string) { }
 }
-export const emptyUser = new User('', '', '', '', '');
+export const emptyUser = new User(0, '', '', '', '');
