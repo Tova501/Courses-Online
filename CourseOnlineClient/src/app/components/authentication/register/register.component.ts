@@ -4,11 +4,12 @@ import { AuthService } from '../../../services/auth.service';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  imports: [MatSelectModule, MatInputModule, MatFormFieldModule, ReactiveFormsModule],
+  imports: [MatSelectModule, MatInputModule, MatFormFieldModule, ReactiveFormsModule , HttpClientModule],
   standalone: true,
   styleUrls: ['./register.component.css']
 })
