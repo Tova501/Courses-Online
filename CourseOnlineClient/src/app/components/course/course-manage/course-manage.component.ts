@@ -1,11 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CourseService } from '../../../services/course.service';
 import { Course } from '../../../models/course.model';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-course-manage',
   templateUrl: './course-manage.component.html',
+  imports: [    MatCardModule,
+      RouterModule,
+      MatButtonModule,
+      MatInputModule,
+      MatFormFieldModule,
+      MatSelectModule,
+      ReactiveFormsModule],
+      standalone  : true,
   styleUrls: ['./course-manage.component.css']
 })
 export class CourseManageComponent implements OnInit {

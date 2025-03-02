@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@angular/material": "^19.2.1",
-    "@ngneat/reactive-forms": "^5.0.2",
-    "angular-router": "^0.0.2"
-  }
-}

@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Course } from '../../../models/course.model';
 import { CourseService } from '../../../services/course.service';
 
 @Component({
   selector: 'app-course-detail',
   templateUrl: './course-detail.component.html',
+  imports: [RouterModule],
+  standalone: true,
   styleUrls: ['./course-detail.component.css']
 })
 export class CourseDetailComponent implements OnInit {

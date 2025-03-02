@@ -7,7 +7,6 @@ import { CourseManageComponent } from './components/course/course-manage/course-
 import { LessonListComponent } from './components/lesson/lesson-list/lesson-list.component';
 import { LessonDetailComponent } from './components/lesson/lesson-detail/lesson-detail.component';
 import { LessonManageComponent } from './components/lesson/lesson-manage/lesson-manage.component';
-import { UserListComponent } from './components/user/user-list/user-list.component';
 import { UserDetailComponent } from './components/user/user-detail/user-detail.component';
 import { UserManageComponent } from './components/user/user-manage/user-manage.component';
 import { HomeComponent } from './components/home/home.component';
@@ -23,7 +22,6 @@ export const routes: Routes = [
   { path: 'courses/:courseId/lessons', component: LessonListComponent },
   { path: 'courses/:courseId/lessons/:id', component: LessonDetailComponent },
   { path: 'manage-lessons', component: LessonManageComponent },
-  { path: 'users', component: UserListComponent },
   { path: 'users/:id', component: UserDetailComponent },
   { path: 'manage-users', component: UserManageComponent },
   { path: 'profile', component: ProfileComponent }
